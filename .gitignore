@@ -1,0 +1,7 @@
+node_modules/
+package-lock.json
+raw/
+scripts/
+.playwright-mcp/
+*.log
+.DS_Store

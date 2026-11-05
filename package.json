@@ -1,0 +1,50 @@
+{
+  "name": "@local/user-bubble-markdown",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Renders Markdown formatting inside sent user message bubbles in the DeepSeek Harness Web GUI.",
+  "type": "module",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "assets/*",
+    "README.md",
+    "README.en.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": ["@deepseek-ai/dsh-client-ui-conversation"]
+    }
+  },
+  "scripts": {
+    "check": "node --check client.js && node --check index.js",
+    "test": "node tests/render.test.cjs"
+  },
+  "devDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saya-ch/dsh-user-bubble-markdown.git"
+  },
+  "bugs": { "url": "https://github.com/saya-ch/dsh-user-bubble-markdown/issues" },
+  "homepage": "https://github.com/saya-ch/dsh-user-bubble-markdown#readme",
+  "license": "MIT",
+  "author": "Guangqi Zhang (saya-ch)",
+  "keywords": ["dsh", "dsh-plugin", "deepseek-harness", "markdown", "chat", "web-ui"]
+}

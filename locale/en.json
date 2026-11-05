@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Markdown in sent messages",
+    "description": "Renders Markdown formatting inside sent user message bubbles, including headings, lists, code blocks, links and emphasis."
+  }
+}

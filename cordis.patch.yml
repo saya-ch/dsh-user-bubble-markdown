@@ -1,0 +1,9 @@
+- insert:
+    - id: user-bubble-markdown
+      name: '@local/user-bubble-markdown'
+      config:
+        # full: complete Markdown | inline: inline syntax only | off: leave the shipped plain-text renderer
+        mode: full
+        taskLists: true
+        codeCopy: true
+        autolink: true

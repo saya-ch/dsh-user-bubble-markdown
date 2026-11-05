@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "用户消息 Markdown 渲染",
+    "description": "在已发送的用户消息气泡内正常渲染 Markdown 排版：标题、列表、代码块、链接、粗斜体等。"
+  }
+}
